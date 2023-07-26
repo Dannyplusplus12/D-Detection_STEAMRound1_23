@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="content">
+            <!-- <input id="file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp"> -->
+            <div id="upload-file" class="file-upload">
+                <label role="button" tabindex="0" class="flex-center" style="cursor: pointer;">
+                    <input id="file-input" style="display: none" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp">
+                    <div style="width: 85%;">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3332 3.66671V12C17.3332 12.9167 16.5832 13.6667 15.6665 13.6667H2.33317C1.4165 13.6667 0.666504 12.9167 0.666504 12L0.674837 2.00004C0.674837 1.08337 1.4165 0.333374 2.33317 0.333374H7.33317L8.99984 2.00004H15.6665C16.5832 2.00004 17.3332 2.75004 17.3332 3.66671ZM8.99984 7.00004H10.6665V5.33337H12.3332V7.00004H13.9998V8.66671H12.3332V10.3334H10.6665V8.66671H8.99984V7.00004ZM2.33317 3.66671H15.6665V12H2.33317V3.66671Z" fill="#1967D2"></path>
+                        </svg>
+                        <br>
+                        <!---->Choose images from your files, or drag &amp; drop here<!---->
+                    </div>
+                </label>
+            </div>
+            <img id="img" src="#" alt="your image" />
+        </div>
+        <div id="nav">
+            <a href="../index.html">DASHBOARD</a>
+            <a href="">APP</a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

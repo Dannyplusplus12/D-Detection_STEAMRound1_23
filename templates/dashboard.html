@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='dashboard/style.css')}}">
+    <title>D-Detection</title>
+</head>
+<body>
+    <div id="main">
+        <div id="content">
+            <h1><span class="D">D</span>-Detection</h1>
+            <div class="wrapper">
+                <p><span class="name"><span class="D">D</span>-Detection</span> là một website sử dụng công nghệ <a href="https://vi.wikipedia.org/wiki/Th%E1%BB%8B_gi%C3%A1c_m%C3%A1y_t%C3%ADnh">Computer Vision</a> để nhận diện vật thể trong ảnh. Bạn có thể chọn loại vật thể muốn nhận diện và tải hình ảnh của mình lên, ví dụ như động vật, hoa, v.v. Website sử dụng thư viện <a href="https://keras.io/">keras</a> và <a href="https://www.tensorflow.org/?hl=vi">tensorflow</a> để xây dựng các mô hình nhận diện vật thể. Các mô hình được huấn luyện bằng keras với dataset hơn 50k bức ảnh, đảm bảo độ chính xác cao và đa dạng. <span class="name"><span class="D">D</span>-Detection</span> là một website hữu ích cho những ai muốn khám phá thế giới qua ống kính của máy tính.</p>
+                <h2>Hướng dẫn sử dụng:</h2>
+                <ul>
+                    <li>Di chuyển sang trang <a href="{{ url_for('app') }}">App</a> bằng thanh điều hướng bên dưới.</li>
+                    <li>Lựa chọn loại vật thể muốn nhận diện.</li>
+                    <li>Upload file, link hình ảnh hoặc sử dụng webcam.</li>
+                    <li>Theo dõi vật thể mà <span class="name"><span class="D">D</span>-Detection</span> đã dự đoán.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="nav" style="background-color: #c9c9c9;">
+            <a href="" style="background-color: #eff6da; border-bottom-left-radius: 58px;  border-bottom-right-radius: 58px;">- DASHBOARD -</a>
+            <a href="{{ url_for('select') }}">APP</a>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='dashboard/main.js')}}"></script>
+</body>
+</html>
